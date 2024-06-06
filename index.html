@@ -1,0 +1,184 @@
+<!-- 
+    я дізнався дуже цікаву штуку: можна створювати власні html-теги. Поки я думаю, що вони працюють як звичайні div, але, можливо, можна розширити їх функціональність 
+
+    матеріал, де я це взяв: https://matthewjamestaylor.com/custom-tags#:~:text=Let's%20get%20started.-,Can%20I%20Create%20My%20Own%20HTML%20Tags%3F,elements%20are%20not%20valid%20HTML.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link type="image/png" sizes="96x96" rel="icon" href="icons8-sneakers-96 (1).png"> 
+  <!-- намагався туж саму, але білу іконку встановити - чомусь нічого не вийшло -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/media.css">
+   
+
+</head>
+
+<body scroll="no">
+  <!-- <script src="/js/loginButton.js" defer type="module"></script> -->
+  <script src="/js/header.js" type="module"></script>
+  <script src="js/login_module.js" type="module"></script>
+
+  <script src="js/cart.js" type="module"></script>
+  <script src="js/products_list.js" type="module"></script>
+  <script src="js/stopCopy.js" type="module" defer></script>
+  <script src="js/img-js.js" type="module"></script>
+  <wrapper>
+    <header></header>
+    <div class="info-cont">
+      <info>
+        <h2>WE ARE NEVER DONE</h2>
+        <p>
+          <span class="db">Celebrating 50 years of Nike from May 16th!</span>
+          Exclusive products, experiences and much more
+          <span class="db">await you for five days. Scan and join the Nike app!</span>
+        </p>
+        <a href="">
+          <span>
+            Celebrate with us
+          </span>
+        </a>
+      </info>
+    </div>
+    <marquee> <img src="/img/runBoyRun.png" alt="бігуща строка"> <img src="/img/runBoyRun.png" alt="бігуща строка">
+    </marquee>
+    <div class="two-people"><img src="/img/2people.png" alt=""></div>
+    <div class="new_sneakers">
+      <card>
+        <info>
+          <h3>New</h3>
+          <p>
+            <span class="db">AIR JORDAN 1 MID</span>
+            <span class="db">LIGHT SMOKE GREY</span>
+          </p>
+          <a href=""><img src="./img/arrow.png" alt=""></a>
+        </info>
+        <div class="img-wrapper"><img src="./img/nike-air-max-270-sunset-dq7625-600_w380-removebg-preview 3.png" alt=""
+            class="img img-js"></div>
+      </card>
+      <card>
+        <info>
+          <h3>New</h3>
+          <p>Air Max 200 SE</p>
+          <a href=""><img src="./img/arrow.png" alt="посилання"></a>
+        </info>
+        <div class="img-wrapper"><img src="./img/Red Shoe.png" alt="кросівок" class="img img-js"></div>
+      </card>
+    </div>
+    <div class="advertisement">
+      <h3>At the moment</h3>
+      <h2>SUMMERTIME MOOD</h2>
+      <h3>Fight the heat in a sunny look!</h3>
+    </div>
+    <div class="sneakers_catalog">
+      <nav>
+        <h2>Top sneakers</h2>
+        <div class="buttons">
+          <a><img src="img/arrow_left.png" alt=""></a>
+          <a><img src="img/arrow_left.png" alt="" class="right"></a>
+        </div>
+        
+      </nav>
+      <div class="sneakers_cards_container">
+        <div class="sneaker_card">
+          <img src="./img/Yellow Shoe.png" alt="" class="animation_on_imgs">
+          <h3>Air Max 97</h3>
+          <h4>$20.99</h4>
+          <a href=""><img src="./img/arrow.png" alt="посилання"></a>
+        </div>
+        <div class="sneaker_card">
+          <img src="./img/15947562_30161559_1000-removebg-preview 1.png" alt="" class="animation_on_imgs">
+          <h3>React Presto</h3>
+          <h4>$20.99</h4>
+          <a href=""><img src="./img/arrow.png" alt="посилання"></a>
+        </div>
+        <div class="sneaker_card">
+          <img src="./img/Shoe 1.png" alt="" class="animation_on_imgs">
+          <h3>KD13 EP</h3>
+          <h4>$20.99</h4>
+          <a href=""><img src="./img/arrow.png" alt="посилання"></a>
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      <h2>Buy by category</h2>
+      <div class="group scroll_to_workout">
+        <div class="name">
+          <h3>workout</h3>
+        </div>
+        <div class="img">
+          <img src="/img/karlie-core-1 1.png" alt="">
+        </div>
+      </div>
+      <div class="group scroll_to_run">
+        <div class="img">
+          <img src="/img/salty 1.png" alt="">
+        </div>
+        <div class="name">
+          <h3>run</h3>
+        </div>
+        
+      </div>
+      <div class="group scroll_to_football">
+        <div class="name">
+          <h3>football</h3>
+        </div>
+        <div class="img">
+          <img src="/img/9n9z 1.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="slogan">
+      LOOKS GOOD. RUNS GOOD. FEELS GOOD.
+    </div>
+    <div class="discount_cards">
+      <div class="card">
+        <div class="info">
+          <h3>-20% Discount</h3>
+          <h4>on your first purchase</h4>
+          <div class="a_wrapper"><a href="">Shop now</a></div> 
+        </div>
+        <div class="img"><img src="./img/Nike-Shoe.png" alt=""></div>
+        
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3>-20% Discount</h3>
+          <h4>on your first purchase</h4>
+          <div class="a_wrapper"><a href="">Shop now</a></div> 
+        </div>
+        <div class="img"><img src="./img/Green 1.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="membership">
+      <h2>More Nike products</h2>
+      <div class="info">
+        <h3><span class="db">your nike <span class="db">membership</span> </span></h3>
+        <p>Join our members and show your love with <span class="db"> <b>Nike By You!</b> </span></p>
+        <div class="a_container">
+          <a href="">Join Us</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <script src="./js/footer.js" type="module"></script>
+    </footer>
+  </wrapper>
+  <h2>це список продуктів, що ви можете купити. Мені було лінь продумувати дизайн карток для взуття, тому маємо, що маємо</h2>
+  <ul class="products_list">
+  </ul>
+  <script src="js/scrollTo.js" type="module"></script>
+</body>
+
+</html>

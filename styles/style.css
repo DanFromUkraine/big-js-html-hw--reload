@@ -1,0 +1,517 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+a {
+  text-decoration: none;
+}
+a:hover {
+  filter: invert(50%);
+}
+
+.animation_on_imgs {
+  width: 350px;
+  transition: 1s;
+}
+
+.animation_on_imgs:hover {
+  width: 900px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.test {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.df_center, .cart_wrapper .cart_module .cart_items .cart_card, .cart_wrapper, .products_list .product, .cart_wrapper .cart_module .cart_items .product, .cont .login_module .submit, .cont .login_module :is(.group, .options, input), .cont, wrapper footer bottom ul li, wrapper .membership .info .a_container, wrapper .discount_cards .card .info .a_wrapper, wrapper .features .group .name, wrapper header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.df_space_between, .cart_wrapper .top, .products_list .product p, .cart_wrapper .cart_module .cart_items .product p, wrapper footer bottom, wrapper header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.db {
+  display: block;
+}
+
+.blur {
+  filter: blur(100px) brightness(0.5);
+}
+
+.pop-buttons {
+  margin: 0 auto;
+  background-color: gray;
+  border-radius: 18px;
+  padding: 10px 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f0f0;
+  padding: 10px;
+  transition: top 0.5s ease-in-out;
+}
+
+.pop-buttons:hover {
+  transition: margin-right 1s ease-in-out;
+}
+
+wrapper {
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  justify-content: center;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+wrapper header {
+  width: 100vw;
+}
+wrapper header img-wrapper img {
+  margin: 0 12vw;
+}
+wrapper header ul {
+  list-style-type: none;
+  margin: 25px 3.5vw;
+  width: 19vw;
+  font-size: 1.4285714286vw;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+wrapper header ul li {
+  padding: 5px;
+}
+wrapper .info-cont {
+  width: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: url("/img/2ndScreen.png");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: right center;
+}
+wrapper .info-cont info {
+  display: grid;
+  padding-left: 3.46vw;
+  padding-bottom: 20px;
+  color: white;
+  grid-column-gap: 30px;
+  width: -moz-max-content;
+  width: max-content;
+}
+wrapper .info-cont info h2 {
+  font-size: 2.8571428571vw;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: none;
+}
+wrapper .info-cont info p {
+  font-size: 1.2142857143vw;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .info-cont info a {
+  width: auto;
+}
+wrapper .info-cont info a span {
+  width: 16vw;
+  height: 20px;
+  background-color: white;
+  color: black;
+  padding: 7px 50px;
+  border-radius: 16px;
+  font-size: 1.1428571429vw;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .two-people {
+  width: 100%;
+  height: auto;
+}
+wrapper .two-people img {
+  width: 100%;
+  height: auto;
+}
+wrapper .new_sneakers {
+  display: flex;
+  justify-content: space-around;
+}
+wrapper .new_sneakers card {
+  width: 660px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #efefef;
+  border-radius: 18px;
+  padding: 40px;
+  height: 270px;
+  position: relative;
+  top: -40px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25); /* Горизонтальне та вертикальне зміщення, радіус тіні, колір тіні */
+}
+wrapper .new_sneakers card info {
+  display: block;
+}
+wrapper .new_sneakers card info h3 {
+  font-size: 3.4285714286vw;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: none;
+  color: #ff3939;
+  margin: 0;
+}
+wrapper .new_sneakers card info p {
+  font-size: 1.4285714286vw;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+}
+wrapper .new_sneakers card info p .db {
+  width: 220px;
+  white-space: nowrap;
+}
+wrapper .new_sneakers .img {
+  width: 570px;
+  height: auto;
+  position: relative;
+  top: -170px;
+  right: 10px;
+}
+wrapper .advertisement {
+  display: grid;
+  justify-content: center;
+  margin-top: 120px;
+}
+wrapper .advertisement h3 {
+  margin: 0 auto;
+  font-size: 2.8571428571vw;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .advertisement h2 {
+  margin: 0 auto;
+  font-size: 5.7142857143vw;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: none;
+}
+wrapper .sneakers_catalog {
+  display: grid;
+  justify-content: center;
+}
+wrapper .sneakers_catalog nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+wrapper .sneakers_catalog nav h2 {
+  font-size: 2.8571428571vw;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .sneakers_catalog nav .buttons .right {
+  rotate: 180deg;
+}
+wrapper .sneakers_catalog .sneakers_cards_container {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+wrapper .sneakers_catalog .sneakers_cards_container .sneaker_card {
+  background-image: url(/img/NIKE.png);
+  background-repeat: no-repeat;
+  background-size: 100px 280px;
+  background-position: center;
+  display: block;
+  background-color: #EFEFEF;
+  box-sizing: border-box;
+  padding: 36px;
+  justify-self: center;
+  border-radius: 18px;
+}
+wrapper .sneakers_catalog .sneakers_cards_container .sneaker_card > img {
+  width: 22.8vw;
+}
+wrapper .sneakers_catalog .sneakers_cards_container .sneaker_card h3 {
+  font-size: 2.8571428571vw;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .sneakers_catalog .sneakers_cards_container .sneaker_card h4 {
+  font-size: 1.4285714286vw;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .sneakers_catalog .sneakers_cards_container .sneaker_card a {
+  float: right;
+}
+wrapper .features {
+  display: grid;
+  justify-content: center;
+}
+wrapper .features h2 {
+  font-size: 2.8571428571vw;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .features .group {
+  display: flex;
+}
+wrapper .features .group > div {
+  width: 648px;
+  height: 570px;
+}
+wrapper .features .group .name {
+  font-size: 2.5714285714vw;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+wrapper .slogan {
+  display: flex;
+  justify-content: center;
+  font-size: 2.8571428571vw;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: none;
+  margin: 100px 0;
+}
+wrapper .discount_cards {
+  display: flex;
+  justify-content: center;
+}
+wrapper .discount_cards .card {
+  display: flex;
+  width: 600px;
+  height: 272px;
+  justify-self: center;
+  background-color: #EFEFEF;
+  border-radius: 18px;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 25px;
+}
+wrapper .discount_cards .card img {
+  width: 480px;
+  position: relative;
+  top: -90px;
+  right: 67px;
+}
+wrapper .discount_cards .card .info {
+  display: block;
+  white-space: nowrap;
+}
+wrapper .discount_cards .card .info h3 {
+  color: #FF3939;
+  font-size: 1.7142857143vw;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .discount_cards .card .info h4 {
+  font-size: 1.4285714286vw;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .discount_cards .card .info .a_wrapper {
+  padding: 16px 25px;
+  background-color: #000000;
+  font-size: 1.4285714286vw;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  border-radius: 16px;
+}
+wrapper .discount_cards .card .info .a_wrapper a {
+  color: white;
+}
+wrapper .membership {
+  display: grid;
+  justify-content: center;
+}
+wrapper .membership h2 {
+  font-size: 2.8571428571vw;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .membership .info {
+  background-image: url(/img/membership.png);
+  color: white;
+  width: 1400px;
+  height: 320px;
+  box-sizing: border-box;
+  padding: 40px;
+}
+wrapper .membership .info h3 {
+  font-size: 2.8571428571vw;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0;
+}
+wrapper .membership .info p {
+  font-size: 1.4285714286vw;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+}
+wrapper .membership .info .a_container {
+  font-size: 1.1428571429vw;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 10px 45px;
+  width: 70px;
+}
+wrapper footer {
+  width: 100vw;
+  justify-items: center;
+}
+wrapper footer thanksgiving {
+  display: grid;
+  justify-items: center;
+  margin: 20px;
+}
+wrapper footer thanksgiving h3 {
+  font-size: 1.7142857143vw;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+wrapper footer thanksgiving h2 {
+  font-size: 3.4285714286vw;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: none;
+  margin: 30px;
+}
+wrapper footer bottom {
+  margin: 0;
+  height: 320px;
+  background-color: black;
+  padding: 20px;
+}
+wrapper footer bottom ul {
+  list-style-type: none;
+  display: grid;
+  align-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 1.4285714286vw;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+wrapper footer bottom ul li {
+  color: white;
+}
+
+.cont {
+  position: absolute;
+  padding-left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 18px;
+  margin-top: 50px;
+  z-index: 1;
+}
+.cont .login_module {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: sans-serif;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  padding: 85px 65px 50px 65px;
+  border-radius: 18px;
+}
+.cont .login_module :is(.group, .options, input) {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cont .login_module > * {
+  display: block;
+  padding: 10px;
+  margin: 0;
+}
+.cont .login_module img {
+  width: 50px;
+  height: auto;
+}
+.cont .login_module .submit {
+  width: 75%;
+  background-color: darkblue;
+  border-radius: 16px;
+  color: white;
+}
+.cont .login_module .submit:disabled {
+  background-color: grey;
+}
+
+.products_list .product, .cart_wrapper .cart_module .cart_items .product {
+  height: 50px;
+}
+.products_list .product .product_img, .cart_wrapper .cart_module .cart_items .product .product_img {
+  width: 50px;
+}
+.products_list .product p, .cart_wrapper .cart_module .cart_items .product p {
+  font-family: "Montserrat", sans-serif;
+  width: 150px;
+}
+
+.cart_wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+}
+.cart_wrapper .cart_module {
+  background-color: #fff;
+  width: 70vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 18px;
+  padding: 30px;
+}
+.cart_wrapper .cart_module .cart_items {
+  display: block;
+}
+.cart_wrapper .cart_module .cart_items .cart_card p {
+  font-size: clamp(1.0625rem, 1.5759rem - 0.5348vw, 1.3125rem);
+}
+
+.rotateRight {
+  transform: rotate(30deg);
+  transition: 3s;
+}
+
+.rotateLeft {
+  transform: rotate(-30deg);
+  transition: 3s;
+}/*# sourceMappingURL=style.css.map */

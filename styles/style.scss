@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+$window: 1400px;
+
+@function w($width) {
+  @return ($width * 100vw) / $window;
+}
+
+@mixin text-style($size, $weight, $style: normal, $transform: none) {
+  font-size: w($size);
+  font-weight: $weight;
+  font-style: $style;
+  text-transform: $transform;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    filter: invert(50%);
+  }
+}
+.animation_on_imgs {
+  width: 350px;
+  transition: 1s;
+
+}
+.animation_on_imgs:hover {
+  width: 900px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.test {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.df_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.df_space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.db {
+  display: block;
+}
+
+.blur {
+  filter: blur(100px) brightness(0.5);
+}
+.pop-buttons {
+  margin: 0 auto;
+  background-color: gray;
+  border-radius: 18px;
+  padding: 10px 20px;
+  width: fit-content;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+
+  position: fixed;
+  top: -100px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f0f0;
+  padding: 10px;
+  transition: top 0.5s ease-in-out; 
+}
+.pop-buttons:hover {
+  transition: margin-right 1s ease-in-out;
+}
+
+wrapper {
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  justify-content: center;
+    max-width: 100%;
+    overflow-x: hidden;
+
+  header {
+    @extend .df_center;
+    width: 100vw;
+
+    img-wrapper img {
+      margin: 0 12vw;
+    }
+
+    ul {
+      @extend .df_space_between;
+      list-style-type: none;
+      margin: 25px 3.5vw;
+      width: 19vw;
+      li {
+        padding: 5px;
+      }
+      @include text-style(20px, 400, normal, uppercase);
+    }
+  }
+
+  .info-cont {
+    //  Тут в мене був ступор - виявляється на власні теги не можна поставити зображення, воно або мінімального розміру без можливості збільшення, або його взагалі немає
+    width: auto;
+    height: fit-content;
+    background-image: url("/img/2ndScreen.png");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: right center;
+    info {
+      display: grid;
+      padding-left: 3.46vw;
+      padding-bottom: 20px;
+      color: white;
+      grid-column-gap: 30px;
+      width: max-content;
+      h2 {
+        @include text-style(40px, 900, italic);
+      }
+      p {
+        @include text-style(17px, 400);
+        // word-break: break-all;
+      }
+      a {
+        width: auto;
+        span {
+          width: 16vw;
+          height: 20px;
+          background-color: white;
+          color: black;
+          padding: 7px 50px;
+          border-radius: 16px;
+          @include text-style(16px, 600);
+        }
+      }
+    }
+  }
+.two-people {
+  width: 100%;
+  height: auto;
+}
+  .two-people img {
+    width: 100%;
+    height: auto;
+  }
+
+  .new_sneakers {
+    display: flex;
+    justify-content: space-around;
+    card {
+      width: 660px;
+      box-sizing: border-box;
+      display: flex;
+      background-color: #efefef;
+      border-radius: 18px;
+      padding: 40px;
+      height: 270px;
+      position: relative;
+      top: -40px;
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25); /* Горизонтальне та вертикальне зміщення, радіус тіні, колір тіні */
+      info {
+        display: block;
+        h3 {
+          @include text-style(48px, 700, italic);
+          color: #ff3939;
+          margin: 0;
+        }
+        p {
+          @include text-style(20px, 400, italic);
+          .db {
+            width: 220px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .img {
+      width: 570px;
+      height: auto;
+      position: relative;
+      top: -170px;
+      right: 10px;
+    }
+  }
+
+  .advertisement {
+    display: grid;
+    justify-content: center;
+    margin-top: 120px;
+    h3 {
+      margin: 0 auto;
+      @include text-style(40px, 400);
+    }
+    h2 {
+      margin: 0 auto;
+      @include text-style(80px, 900, italic);
+    }
+  }
+
+  .sneakers_catalog  {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        @include text-style(40px, 700);
+      }
+      .buttons {
+        .right {
+          rotate: 180deg;
+        }
+      }
+      
+    } 
+    display: grid;
+    justify-content: center;
+    .sneakers_cards_container {
+      display: flex;
+      justify-content: space-between;
+      width: 90vw;
+      .sneaker_card {
+        background-image: url(/img/NIKE.png);
+        background-repeat: no-repeat;
+        background-size: 100px 280px;
+        background-position: center;
+        display: block;
+        background-color: #EFEFEF;
+        box-sizing:border-box;
+        padding: 36px;
+        justify-self: center;
+        border-radius: 18px;
+        > img {
+          width: 22.8vw;
+        }
+        h3 {
+          @include text-style(40px, 700);
+        }
+        h4 {
+          @include text-style(20px, 400);
+        }
+        a {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .features {
+    display: grid;
+    justify-content: center;
+    h2 {
+      @include text-style(40px, 700)
+    }
+    .group {
+      display: flex;
+      > div {
+        width: 648px;
+        height: 570px;
+      }
+      .name {
+        @extend .df_center;
+        @include text-style(36px, 700, italic, uppercase);
+        letter-spacing: 10px;
+      }
+    }
+  }
+  .slogan {
+    display: flex;
+    justify-content: center;
+    @include text-style(40px, 900, italic );
+    margin: 100px 0;
+  }
+
+  .discount_cards {
+    display: flex;
+    justify-content: center;
+    .card {
+      display: flex;
+      width: 600px;
+      height: 272px;
+      justify-self: center;
+      background-color: #EFEFEF;
+      border-radius: 18px;
+      box-sizing: border-box;
+      padding: 30px;
+      margin: 25px;
+      img {
+        width: 480px;
+        position: relative;
+        top: -90px;
+        right: 67px;
+      }
+      .info {
+        display: block;
+        white-space: nowrap;
+        
+        h3 {
+          color: #FF3939;
+          @include text-style(24px, 700);
+        }
+        h4 {
+          @include text-style(20px, 400)
+
+        }
+        .a_wrapper {
+          padding: 16px 25px;
+          background-color: #000000;
+          @extend .df_center;
+          @include text-style(20px, 400);
+          border-radius: 16px;
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .membership {
+    h2 {
+      @include text-style(40px, 700);
+    }
+    display: grid;
+    justify-content: center;
+    .info {
+      background-image: url(/img/membership.png);
+      color: white;
+      width: 1400px;
+      height: 320px;
+      box-sizing: border-box;
+      padding: 40px;
+      h3 {
+        @include text-style(40px, 900, italic, uppercase);
+        margin: 0;
+      }
+      p {
+        @include text-style(20px, 400);
+      }
+      .a_container {
+        @include text-style(16px, 400);
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 10px 45px;
+        width: 70px;
+        @extend .df_center;
+      }
+    }
+  }
+
+  footer {
+    width: 100vw;
+    justify-items: center;
+
+    thanksgiving {
+      display: grid;
+      justify-items: center;
+      margin: 20px;
+      h3 {
+        @include text-style(24px, 400, normal, uppercase);
+      }
+      h2 {
+        @include text-style(48px, 900, italic);
+        margin: 30px;
+      }
+    }
+
+    bottom {
+      @extend .df_space_between;
+      margin: 0;
+      height: 320px;
+      background-color: black;
+      padding: 20px;
+
+      ul {
+        list-style-type: none;
+        display: grid;
+        align-content: space-around;
+        padding: 20px;
+        box-sizing: border-box;
+        @include text-style(20px, 400, normal, uppercase);
+        li {
+          color: white;
+          @extend .df_center;
+        }
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+
+
+
+.cont {
+  position: absolute;
+  padding-left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 18px;
+  margin-top: 50px;
+  z-index: 1;
+  @extend .df_center;
+  .login_module {
+      width: fit-content; 
+      font-family:sans-serif;
+      height: fit-content;
+      background-color: white;
+      padding: 85px 65px 50px 65px;
+      border-radius: 18px;
+      :is(.group, .options, input) {
+          @extend .df_center;
+          width:fit-content;
+      }
+      > * {
+          display: block;
+          padding: 10px;
+          margin: 0;
+      }
+      img {
+          width: 50px;
+          height: auto;
+      }
+      .submit {
+          width: 75%;
+          background-color: darkblue;
+          border-radius: 16px;
+          color: white;
+          @extend .df_center;
+        
+      }
+      .submit:disabled {background-color: grey;}
+  }
+}
+
+.products_list {
+  .product {
+  @extend .df_center;
+  height: 50px;
+  .product_img {
+    width: 50px;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    width: 150px;
+    @extend .df_space_between
+  }
+}
+}
+
+.cart_wrapper {
+  width: 100vw;  
+  height: 100vh;;
+  position: absolute;
+  z-index: 1;
+  @extend .df_center;
+  font-family: "Montserrat", sans-serif;
+  
+  .top {
+    @extend .df_space_between;
+  }
+  .cart_module {
+    background-color: #fff;
+    width: 70vw;
+    height: fit-content;
+    border-radius: 18px;
+    padding: 30px;
+  
+    .cart_items {
+      display: block;
+
+     @extend .products_list;
+      .cart_card {
+        @extend .df_center;
+        p {
+          font-size: clamp(1.0625rem, 1.5759rem + -0.5348vw, 1.3125rem);        }
+      }
+    }
+  }
+}
+
+.rotateRight {
+  transform: rotate(30deg);
+  transition: 3s;
+}
+.rotateLeft {
+  transform: rotate(-30deg);
+  transition: 3s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
